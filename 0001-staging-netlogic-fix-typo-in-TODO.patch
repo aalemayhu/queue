@@ -1,0 +1,27 @@
+From 09cd4053514a532da2ba8059475f8f45a2373b0b Mon Sep 17 00:00:00 2001
+From: Alexander Alemayhu <alexander@alemayhu.com>
+Date: Tue, 18 Oct 2016 21:16:03 +0200
+Subject: [PATCH] staging: netlogic: fix typo in TODO
+
+"standred" to "standard".
+
+Signed-off-by: Alexander Alemayhu <alexander@alemayhu.com>
+---
+ drivers/staging/netlogic/TODO | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/staging/netlogic/TODO b/drivers/staging/netlogic/TODO
+index 8f172b017b94..6130e6021ce6 100644
+--- a/drivers/staging/netlogic/TODO
++++ b/drivers/staging/netlogic/TODO
+@@ -1,6 +1,6 @@
+ * Implementing 64bit stat counter in software
+ * All memory allocation should be changed to DMA allocations
+-* Changing comments in to linux standred format
++* Changing comments in to linux standard format
+ 
+ Please send patches
+ To:
+-- 
+2.10.1
+
