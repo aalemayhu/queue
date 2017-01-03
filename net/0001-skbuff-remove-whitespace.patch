@@ -1,0 +1,28 @@
+From 2090594da637cbe2dfe31d14c3c97e8ac3febbcc Mon Sep 17 00:00:00 2001
+From: Alexander Alemayhu <alexander@alemayhu.com>
+Date: Tue, 3 Jan 2017 19:45:57 +0100
+Subject: [PATCH net] skbuff: remove whitespace
+
+Signed-off-by: Alexander Alemayhu <alexander@alemayhu.com>
+---
+ include/linux/skbuff.h | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/include/linux/skbuff.h b/include/linux/skbuff.h
+index b53c0cfd417e..83d6e90bfa79 100644
+--- a/include/linux/skbuff.h
++++ b/include/linux/skbuff.h
+@@ -1874,8 +1874,8 @@ void skb_add_rx_frag(struct sk_buff *skb, int i, struct page *page, int off,
+ void skb_coalesce_rx_frag(struct sk_buff *skb, int i, int size,
+ 			  unsigned int truesize);
+ 
+-#define SKB_PAGE_ASSERT(skb) 	BUG_ON(skb_shinfo(skb)->nr_frags)
+-#define SKB_FRAG_ASSERT(skb) 	BUG_ON(skb_has_frag_list(skb))
++#define SKB_PAGE_ASSERT(skb)	BUG_ON(skb_shinfo(skb)->nr_frags)
++#define SKB_FRAG_ASSERT(skb)	BUG_ON(skb_has_frag_list(skb))
+ #define SKB_LINEAR_ASSERT(skb)  BUG_ON(skb_is_nonlinear(skb))
+ 
+ #ifdef NET_SKBUFF_DATA_USES_OFFSET
+-- 
+2.11.0
+
