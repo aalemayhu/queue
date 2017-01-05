@@ -1,0 +1,31 @@
+From 5c8824941eaa56ae3bb8d271404166d39d27ed16 Mon Sep 17 00:00:00 2001
+From: Alexander Alemayhu <alexander@alemayhu.com>
+Date: Thu, 5 Jan 2017 21:57:16 +0100
+Subject: [PATCH] edac: fix typos
+
+o s/labed/labeled
+o s/differenciate/differentiate
+
+Signed-off-by: Alexander Alemayhu <alexander@alemayhu.com>
+---
+ include/linux/edac.h | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/include/linux/edac.h b/include/linux/edac.h
+index 07c52c0af62d..5b6adf964248 100644
+--- a/include/linux/edac.h
++++ b/include/linux/edac.h
+@@ -190,8 +190,8 @@ static inline char *mc_event_error_type(const unsigned int err_type)
+  *			part of the memory details to the memory controller.
+  * @MEM_RMBS:		Rambus DRAM, used on a few Pentium III/IV controllers.
+  * @MEM_DDR2:		DDR2 RAM, as described at JEDEC JESD79-2F.
+- *			Those memories are labed as "PC2-" instead of "PC" to
+- *			differenciate from DDR.
++ *			Those memories are labeled as "PC2-" instead of "PC" to
++ *			differentiate from DDR.
+  * @MEM_FB_DDR2:	Fully-Buffered DDR2, as described at JEDEC Std No. 205
+  *			and JESD206.
+  *			Those memories are accessed per DIMM slot, and not by
+-- 
+2.11.0
+
