@@ -1,0 +1,28 @@
+From 14e562c9ccaed8e66c1b63a3c144e373a906d87b Mon Sep 17 00:00:00 2001
+From: Alexander Alemayhu <alexander@alemayhu.com>
+Date: Fri, 6 Jan 2017 21:25:24 +0100
+Subject: [PATCH] drm/nouveau: fix typo
+
+s/avalilable/available
+
+Signed-off-by: Alexander Alemayhu <alexander@alemayhu.com>
+---
+ drivers/gpu/drm/nouveau/nouveau_connector.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/gpu/drm/nouveau/nouveau_connector.c b/drivers/gpu/drm/nouveau/nouveau_connector.c
+index 947c200655b4..da6799d752e6 100644
+--- a/drivers/gpu/drm/nouveau/nouveau_connector.c
++++ b/drivers/gpu/drm/nouveau/nouveau_connector.c
+@@ -696,7 +696,7 @@ nouveau_connector_detect_lvds(struct drm_connector *connector, bool force)
+ 	}
+ 
+ 	/* If no EDID found above, and the VBIOS indicates a hardcoded
+-	 * modeline is avalilable for the panel, set it as the panel's
++	 * modeline is available for the panel, set it as the panel's
+ 	 * native mode and exit.
+ 	 */
+ 	if (nouveau_bios_fp_mode(dev, NULL) && (drm->vbios.fp_no_ddc ||
+-- 
+2.11.0
+
