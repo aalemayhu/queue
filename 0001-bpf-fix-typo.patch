@@ -1,0 +1,42 @@
+From 6e086442af686ffa699a4da58ff4960823bc3ec6 Mon Sep 17 00:00:00 2001
+From: Alexander Alemayhu <alexander@alemayhu.com>
+Date: Sat, 18 Mar 2017 13:03:35 +0100
+Subject: [PATCH] bpf: fix typo
+
+s/seprately/separately
+
+Signed-off-by: Alexander Alemayhu <alexander@alemayhu.com>
+---
+ include/uapi/linux/bpf.h       | 2 +-
+ tools/include/uapi/linux/bpf.h | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/include/uapi/linux/bpf.h b/include/uapi/linux/bpf.h
+index 0539a0ceef38..fae00a7a5b31 100644
+--- a/include/uapi/linux/bpf.h
++++ b/include/uapi/linux/bpf.h
+@@ -593,7 +593,7 @@ struct bpf_tunnel_key {
+  * provide backwards compatibility with existing SCHED_CLS and SCHED_ACT
+  * programs.
+  *
+- * XDP is handled seprately, see XDP_*.
++ * XDP is handled separately see XDP_*.
+  */
+ enum bpf_ret_code {
+ 	BPF_OK = 0,
+diff --git a/tools/include/uapi/linux/bpf.h b/tools/include/uapi/linux/bpf.h
+index 0539a0ceef38..fae00a7a5b31 100644
+--- a/tools/include/uapi/linux/bpf.h
++++ b/tools/include/uapi/linux/bpf.h
+@@ -593,7 +593,7 @@ struct bpf_tunnel_key {
+  * provide backwards compatibility with existing SCHED_CLS and SCHED_ACT
+  * programs.
+  *
+- * XDP is handled seprately, see XDP_*.
++ * XDP is handled separately see XDP_*.
+  */
+ enum bpf_ret_code {
+ 	BPF_OK = 0,
+-- 
+2.9.3
+
