@@ -1,0 +1,22 @@
+From 8c7c9bda0deff517d808d50d1756c6d5aae99571 Mon Sep 17 00:00:00 2001
+From: Alexander Alemayhu <alexander@alemayhu.com>
+Date: Tue, 11 Apr 2017 13:31:32 +0200
+Subject: [PATCH net-next] bpf: add test_progs to .gitignore
+
+Signed-off-by: Alexander Alemayhu <alexander@alemayhu.com>
+---
+ tools/testing/selftests/bpf/.gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/tools/testing/selftests/bpf/.gitignore b/tools/testing/selftests/bpf/.gitignore
+index 541d9d7fad5a..2fe8766e204f 100644
+--- a/tools/testing/selftests/bpf/.gitignore
++++ b/tools/testing/selftests/bpf/.gitignore
+@@ -3,3 +3,4 @@ test_maps
+ test_lru_map
+ test_lpm_map
+ test_tag
++test_progs
+-- 
+2.9.3
+
