@@ -1,0 +1,34 @@
+From aec3e795e4b651a984a2a9813b8f897e69244e0d Mon Sep 17 00:00:00 2001
+From: Alexander Alemayhu <alexander@alemayhu.com>
+Date: Tue, 8 Aug 2017 20:18:40 +0200
+Subject: [PATCH iproute2 master] examples/bpf: update list of examples
+
+Remove deleted examples and add the new map in map example.
+
+Signed-off-by: Alexander Alemayhu <alexander@alemayhu.com>
+---
+ examples/bpf/README | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+diff --git a/examples/bpf/README b/examples/bpf/README
+index 4247257850eb..1bbdda3f8dc1 100644
+--- a/examples/bpf/README
++++ b/examples/bpf/README
+@@ -1,13 +1,8 @@
+ eBPF toy code examples (running in kernel) to familiarize yourself
+ with syntax and features:
+ 
+- - bpf_prog.c		-> Classifier examples with using maps
+  - bpf_shared.c		-> Ingress/egress map sharing example
+  - bpf_tailcall.c	-> Using tail call chains
+  - bpf_cyclic.c		-> Simple cycle as tail calls
+  - bpf_graft.c		-> Demo on altering runtime behaviour
+-
+-User space code example:
+-
+- - bpf_agent.c		-> Counterpart to bpf_prog.c for user
+-                           space to transfer/read out map data
++ - bpf_map_in_map.c     -> Using map in map example
+-- 
+2.13.3
+
